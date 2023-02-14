@@ -1,4 +1,4 @@
-from player import HumanPlayer, RandomComputerPlayer
+from player import HumanPlayer, RandomComputerPlayer, geniusComputerPlayer
 import time
 
 class tictactoe:
@@ -98,6 +98,6 @@ def play(game, x_player, o_player, print_game=True): # the game itself
 
 if __name__ == '__main__':
     x_player = HumanPlayer('X')
-    o_player = RandomComputerPlayer('O')
+    o_player = geniusComputerPlayer('O')
     t = tictactoe()
-    play(t,o_player,x_player,print_game=True)
+    play(t,x_player,o_player,print_game=True)
